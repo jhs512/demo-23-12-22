@@ -2,7 +2,7 @@
 	let names = $state([]);
 
 	$effect(() => {
-		fetch('http://localhost:8080/api/names')
+		fetch('https://demo59.fly.dev/api/names')
 			.then((res) => res.json())
 			.then((data) => (names = data));
 	});
